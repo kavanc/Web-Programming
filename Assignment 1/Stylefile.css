@@ -1,14 +1,28 @@
 body {background-color: black}
-body{color: white}
+body{
+    color: white}
+
 h1{
    text-align: center; 
 }
-#Lamborghini{
-    text-align: left;
+hr{
+    
 }
-#Comparison{
-    text-align: center;
+#LamboPic{
+    width: 50%
 }
+h3{
+    font-family: "Helvetica", sans-serif;
+}
+.row{
+   font-family: "Helvetica", sans-serif;
+    display: flex;
+}
+.column{
+   flex: 33.33%;
+   padding: 5px;
+}
+
 a:link {
     color: white;
     background-color: transparent;
