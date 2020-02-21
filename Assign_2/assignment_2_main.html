@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T-SHIRT ORDER FORM</title>
+	<link rel="stylesheet"  type="text/css" href="assignment_2_style.css" />
+	<script src="assignment_2_script.js"></script>
+	<img src="summer_header.PNG" alt="summer_header" id="summer_header">
+</head>
+
+<body>
+	<h1 align="center">T-SHIRT ORDER FORM</h1>
+	<h4>
+		Select Your Item
+	</h4>
+	<div></div>
+
+	<div class="tshirt" >
+		<form name="pick_shirt">
+			
+			<div class="container red">
+			<input type="radio" name="tshirt">		
+			</div>	
+
+			<div class="container blue">
+			<input type="radio" name="tshirt">		
+			</div>
+
+			<div class="container yellow">
+			<input type="radio" name="tshirt">
+			</div>
+
+			<div class="container green">
+			<input type="radio" name="tshirt">
+			</div>
+
+		</form>
+	</div>
+	<p>
+		
+
+	</p>
+ <div style="display: block;">
+	
+	<select id="quantity" >
+		<option selected disabled>Quantity</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		
+	</select>
+
+	
+	<select id="size">
+		<option selected disabled>Size</option>
+		<option value="10">XS</option>
+		<option value="10">S</option>
+		<option value="12">M</option>
+		<option value="12">L</option>
+		<option value="12">XL</option>
+		<option value="15">XXL</option>
+		<option value="15">XXXL</option>
+	</select>
+</div>
+
+<div id="tax_1">
+<h5>Tax</h5> <p id="tax">0.00</p>
+
+</div>
+
+<h5>Total (with tax)</h5> <p id="total">0.00</p>
+
+<hr>
+<div class="row">
+	<div class="col-75">
+		<div class="con">
+			<form name="first_form">
+				<h5> Credit Card</h5>
+	<div class="row">
+		<div class="col-50">
+		<label for="fname">First Name</label>
+		<input type="text" id="fname" name="first" > 
+		<label for="cc">Credit Card</label>
+		<input type="text" id="cc" name="Credit" >
+		<label for="exm">Expiration Month</label>
+		<select id="exm">
+			<option value="">Choose One</option>
+			<option value="1">01</option>
+			<option value="2">02</option>
+			<option value="3">03</option>
+			<option value="4">04</option>
+			<option value="5">05</option>
+			<option value="6">06</option>
+			<option value="7">07</option>
+			<option value="8">08</option>
+			<option value="9">09</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+		</div>
+	</div>	
+
+	<div class="row">
+		<div class="col-50 right">
+		<label for="lname">Last Name</label>
+		<input type="text" id="lname" name="last">
+		<label for="sc">Security Code</label>
+		<input type="text" id="sc" name="security">
+		<label for="exy">Expiration Year</label>
+		<select id="exy">
+			<option value="">Choose One</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+		</select>
+		</div>
+	</div>
+<h5>Shipping Address</h5>
+	
+		<div class="col-100">
+		<label for="stadd">Street Address</label>
+		<input type="text" id="stadd" name="street1">
+		<label for="stadd2">Street Address Line 2</label>
+		<input type="text" id="stadd2" name="street2">
+		<label for="city">City</label>
+		<input type="text" id="city" name="city">
+		<label for="stpr">State/Province</label>
+		<input type="text" id="stpr" name="State">
+		<label for="post">Postal/Zip Code</label>
+		<input type="text" id="post" name="post">
+		
+		<select id="country">
+			<option value="CAN">Canada</option>
+			<option value="USA">United States of America</option>
+		</select>
+		</div>
+		<h5 id="delivery">Delivery Date</h5>
+		<input type="date" name="delivery">
+		<h5 id="email">Email</h5>
+		<input type="text" name="email" placeholder="example@example.com">
+</div>
+	<input type="reset" value="CLEAR">
+	</form>
+		<br>
+		<br>
+		
+	<button type="button" onclick="GetTotal(); validate();">Submit</button>	
+	</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

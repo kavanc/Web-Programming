@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assign3.css">
+
+	<title>Login assignment</title>
+</head>
+<body>
+	
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'login')" id="defaultOpen">Login</button>
+		<button class="tablinks" onclick="openTab(event, 'sign')">Sign Up</button>
+	</div>
+	<div class="container" id="login">
+		<h3>Login to my website</h3>
+		<form method="post" action="checkUser.php">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="pass">Password</label>
+			<input type="password" id="pass" name="pass" required>
+		</form>
+		<button type="submit" name="login-sub">LOGIN</button>	
+
+	</div>
+	<div class="container" id="sign">
+		<h3>Sign Up</h3>
+		<form action="signup.php" method="post">
+			<label for="first">First name</label>
+			<input type="text" id="first" name="first" required>
+
+			<label for="last">Last Name</label>
+			<input type="text" id="last" name="last" required>
+
+			<label for="User">Username</label>
+			<input type="text" id="user" name="user" required>
+
+			<label for="passw">Password</label>
+			<input type="text" id="passw" name="passw" required>
+
+			<label for="email1">Email</label>
+			<input type="email" id="email1" name="email1" required>
+
+		
+		</form>
+		<button type="submit" name="sign-sub">SIGN UP</button>	
+
+	</div>
+		<script type="text/javascript">
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = document.getElementsByClassName("container");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			tablinks = document.getElementsByClassName("tablinks");
+  			for (i = 0; i < tablinks.length; i++) {
+   				 tablinks[i].className = tablinks[i].className.replace(" active", "");
+ 			}
+
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += "active";
+		}
+	</script>
+	
+
+<script>
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>
