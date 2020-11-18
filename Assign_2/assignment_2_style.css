@@ -1,0 +1,120 @@
+body{
+	font-family: arial;
+}
+#summer_header{
+	width:100%;
+}
+h4{
+	font-size: 200%;
+}
+h5{
+
+	font-size: 150%;
+}
+.container{
+
+display: inline-block;
+padding: 10%;
+border-style: solid; 
+border-radius: 10px;
+margin: 5px;
+}
+.red{
+	background:url(redt.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.blue{
+	background:url(bluet.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.yellow{
+	background:url(yellowt.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.green{
+	background:url(greent.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#quantity,#size{
+	margin-left: 8%;
+	padding: 1%;
+	font-size: 20px;
+	width: 25%;
+}
+#tax{
+	text-align: center;
+	margin-left: 10px;
+}
+#total{
+	text-align: center;
+	margin-left: 10px;
+}
+
+hr{
+	display: block;
+	border-width: 2px;
+	border-color: black;
+}
+
+.row{
+	float:left;
+	flex-wrap: wrap;
+}
+
+.col-50{
+	flex: 50%;
+	width: 100%;
+}
+.col-75{
+	flex: 50%;
+	width: 100%;
+}
+.col-100{
+	width:100%;
+	
+}
+
+.con{
+	padding: 0px 15px 10px 20px;
+
+}
+input[type=text],#exm,#exy,#country{
+	width: 150%;
+	margin-bottom: 20px;
+	
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius:15px;
+}
+.right{
+	width:90%;
+	margin-left:130px;
+}
+input[type=date]{
+	width:150%;
+	padding: 12px;
+	border-radius:5px;
+}
+
+label{
+	margin-bottom: 10px;
+	display: block;
+}
+button{
+	background-color: limegreen;
+	text-align: right;
+	font-size: 40px;
+	float: right;
+	font-family: Arial;
+}
+input[type=reset]{
+	background-color: red;
+	border-radius: 75%
+	
+	
+}
